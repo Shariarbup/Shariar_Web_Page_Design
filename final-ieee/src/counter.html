@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Counter</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style type="text/css">
+	.stat{
+		background: #121212;
+		padding-top: 80px;
+		padding-bottom:80px;
+		color: white;
+		
+		margin-top:1px;
+		margin-bottom:1px;
+	}
+	.stat i{
+		margin-bottom:5px;
+		font-size:50px;
+	}
+	.stat-items h2{
+		font-weight:bold;
+		font-size:42px;
+		color:darkorange;
+	}
+	.stat p{
+		font-weight: bold;
+		letter-spacing: 1px;
+	}
+  </style>
+
+</head>
+<body>
+
+	<section class="stat" id="stats">
+		<div class="content-box">
+			
+			<div class="d-flex  justify-content-center">
+				<div class="text-center">
+					 <h2 class="display-3">OUR WORKERS AND ACHIEVEMENTS</h2>
+				 <hr />
+				</div>
+				
+			</div>
+			<br /><br />
+			<div class="container">
+				
+				<div class="row text-center">
+					<div class="col-md-3">
+						<div class="stat-items">
+							<i class="fa fa-camera"></i>
+							<h2><span class="counter text-center">100</span></h2>
+							<p>STUDENT MEMBERS</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="stat-items">
+							<i class="fa fa-camera"></i>
+							<h2><span class="counter text-center">17</span></h2>
+							<p>EXECUTIVE MEMBERS</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="stat-items">
+							<i class="fa fa-camera"></i>
+							<h2><span class="counter text-center">50</span></h2>
+							<p>ACTIVE VOLUNTEERS</p>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="stat-items">
+							<i class="fa fa-camera"></i>
+							<h2><span class="counter text-center">10</span></h2>
+							<p>RESEARCH PAPERS OF BUP PUBLISHED IN IEEE</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	 
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/navbar-fixed.js"></script>
+  
+  
+		<script src="js/jquery.waypoints.min.js"></script>
+		 <script src="js/jquery.counterup.min.js"></script>
+	
+		<script >
+		jQuery(document).ready(function(){
+			$('.counter').counterUp({
+			delay: 10,
+			time: 1000
+			});
+		
+		});
+		 
+		</script>
+</body>
+</html>

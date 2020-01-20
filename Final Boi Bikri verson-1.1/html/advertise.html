@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" "></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+<style >
+
+#department{
+display: block;
+width: 237px;
+height: 31px;
+margin: 15px 0;
+background:#F1F1F1;
+}
+</style>	
+	
+</head>
+<body>
+	<form action="">
+	 <h1 class="display-3 text-center my-4">Advertisement</h1>
+		<div class="container">
+		
+			 <div class="form-group">
+					<label for="file">File input</label>
+					<input type="file" id="file" class="form-control-file">
+					<small id="fileHelp" class="form-text text-muted">Max 3mb size</small>
+			 </div>
+			 
+			 
+			  <!-- FORM CHECK -->
+            <fieldset class="form-group">
+                <legend>Your File Category</legend>
+                <div class="form-check">
+                  <label class="form-check-label" >
+                      <input type="radio" name="ad_cat" class="form-check-input" value="option1" checked>
+                      Book
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" name="ad_cat" class="form-check-input" value="option1" >
+                     Handnote
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                      <input type="radio" name="ad_cat" class="form-check-input" value="option1">
+                      Tutorial
+                  </label>
+                </div>
+            </fieldset>
+			<!-----select Department----->
+			 <label for="department"><b>Department :</b></label>
+			 <select id="department"name="department">
+				<option value="ICT">ICT</option>
+				<option value="ES">ES</option>
+				<option value="IR">IR</option>
+				<option value="BBA">BBA</option>
+			   </select>
+			   <!-----Price----->
+			 <div class="form-group">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price" class="form-control form-control-sm" placeholder="Enter Book Price">
+            </div>
+			 <button class="btn btn-primary" type="submit">Submit</button>
+			 
+			 
+		</div>
+	
+	</form>
+</body>
+</html>
